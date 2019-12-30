@@ -1,8 +1,15 @@
 const assert = require('assert')
 const app = require('../../src/app')
 const service = app.service('unsplash-photos')
+const defaultExport = require('../../lib/index')
 
 describe('unsplash-photos service', () => {
+  it('exposes the UnsplashService', () => {
+    const { UnsplashPhotos } = defaultExport
+
+    assert(UnsplashPhotos, 'exposes the UnsplashPhotos class')
+  })
+
   it('registered the service', () => {
     assert.ok(service, 'Registered the service')
   })
