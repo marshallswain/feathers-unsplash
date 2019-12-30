@@ -1,0 +1,63 @@
+{
+  "name": "feathers-unsplash",
+  "description": "FeathersJS service adapter for the Unsplash API",
+  "version": "0.0.0",
+  "homepage": "",
+  "main": "lib/index",
+  "files": [
+    "lib/**/*.*"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/marshallswain/feathers-unsplash"
+  },
+  "keywords": [
+    "feathers",
+    "unsplash",
+    "unsplash-js"
+  ],
+  "author": {
+    "name": "Marshall Thompson",
+    "email": "marshall@creativeideal.net"
+  },
+  "contributors": [],
+  "bugs": {},
+  "directories": {
+    "lib": "src",
+    "test": "test/",
+    "config": "config/"
+  },
+  "engines": {
+    "node": "^12.0.0",
+    "yarn": ">= 0.18.0"
+  },
+  "scripts": {
+    "test": "yarn run eslint && yarn run mocha",
+    "eslint": "eslint src/. test/. --config .eslintrc.json",
+    "dev": "nodemon src/",
+    "start": "node src/",
+    "mocha": "mocha test/ --recursive --exit"
+  },
+  "dependencies": {
+    "unsplash-js": "^6.0.0"
+  },
+  "devDependencies": {
+    "@feathersjs/configuration": "^4.3.11",
+    "@feathersjs/errors": "^4.3.11",
+    "@feathersjs/express": "^4.3.11",
+    "@feathersjs/feathers": "^4.3.11",
+    "@feathersjs/socketio": "^4.3.11",
+    "@feathersjs/transport-commons": "^4.4.3",
+    "axios": "^0.19.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "eslint": "^6.6.0",
+    "helmet": "^3.21.2",
+    "mocha": "^6.2.2",
+    "node-fetch": "^2.6.0",
+    "nodemon": "^2.0.0",
+    "serve-favicon": "^2.5.0",
+    "winston": "^3.0.0"
+  }
+}

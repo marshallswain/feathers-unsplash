@@ -1,0 +1,12 @@
+{
+  "host": "localhost",
+  "port": 3030,
+  "public": "../public/",
+  "paginate": {
+    "default": 10,
+    "max": 50
+  },
+  "unsplash": {
+    "accessKey": "FEATHERS_UNSPLASH_ACCESS_KEY"
+  }
+}
