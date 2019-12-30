@@ -8,6 +8,8 @@ This project uses [Feathers](http://feathersjs.com). An open source web framewor
 
 Currently only the `UnsplashPhotos` service class is supported.
 
+It is built on top of the official [unsplash-js](https://github.com/unsplash/unsplash-js#photos) package.
+
 ## Install
 
 ```
